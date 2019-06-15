@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Spring Boot實戰訓練 ： Spring+Mysql 構建一個簡單的登錄註冊系統</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<h2>實力驅動學習之Spring框架 ： </h2>
+	<p>----Spring Boot + MySql 構建一個簡單的登錄註冊系統</p><br>
+	<p th:text="'Hello, ' + ${name} + '!'" />
+	
+	<div class="add">
+		<h2>註冊新帳號</h2>
+		<form action="/add" method="GET">
+			用戶名 : <input type="text" name = "name"><br>
+			郵箱 ： <input type="text" name="email"><br>
+			密碼 ： <input type="password" name="password"><br>
+			<input type="submit" value="註冊">
+		</form>
+	</div>
+	
+	<div class="login">
+		<h2>登陸已有帳號</h2>
+		<form action="/login" method="GET">
+			郵箱 : <input type="text" name="email"><br>
+			密碼 : <input type="password" name="password"><br>
+			<input type="submit" value="登陸">
+		</form>
+	</div>
+	
+	<div class="all">
+		<h2><a href="/all">查看所有註冊帳號信息</a></h2>
+	</div>
+	
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
